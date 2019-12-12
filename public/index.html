@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -24,9 +24,18 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Shopping Cart - React-redux</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="%PUBLIC_URL%/asset/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="%PUBLIC_URL%/asset/css/mdb.min.css" rel="stylesheet">
+    <!-- Customizer -->
+    <link rel="stylesheet" href="https://mdbootstrap.com/live/_MDB/css/customizer.min.css">
+    <!-- Your custom styles (optional) -->
+    <link href="%PUBLIC_URL%/asset/css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body  class="hidden-sn animated deep-purple-skin">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +48,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript" src="%PUBLIC_URL%/asset/js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="%PUBLIC_URL%/asset/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="%PUBLIC_URL%/asset/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="%PUBLIC_URL%/asset/js/mdb.min.js"></script>
+    <!-- Customizer -->
+    <script type="text/javascript" src="https://mdbootstrap.com/live/_MDB/js/customizer.min.js"></script>
+    <!-- Custom -->
+    <script type="text/javascript">
+      $(".button-collapse").sideNav();
+    </script>
   </body>
 </html>

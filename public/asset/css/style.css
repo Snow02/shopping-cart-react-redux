@@ -1,0 +1,87 @@
+/* YOUR CUSTOM STYLES */
+
+.section-heading.product-title , .section-heading.cart{
+    font-weight: bold;
+    background: #00cec9;
+    padding: 10px 0;
+    font-size: 24px;
+    margin-top:0;
+}
+span.qty {
+    padding:5px 10px;
+}
+
+.section-heading.cart{
+    background: #f39c12;
+    color:#fff;
+}
+.wp-cart , .wp-products{
+    border:1px solid #bdc3c7;
+    margin:30px 0;
+}
+ h4.message-buy{
+    text-align: center;
+
+}
+h4.message-buy span{
+    color:red;
+
+}
+.product-table thead th{
+    font-weight: bold;
+    text-align: center;
+}
+.product-table tbody td{
+    text-align: center;
+}
+.product-table tbody .thumb{
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
+.product-table tbody .thumb img{
+    max-width: 100%;
+    height: auto;
+
+}
+.btn-sm{
+    font-size: 2px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+td.cart-empty{
+    text-align: center;
+    margin : 0px auto;
+    color:red;
+}
+.fa-shopping-cart{
+    font-size: 11px;
+}
+.btn-floating{
+    width: 30px;
+    height: 30px;
+}
+.btn-floating i{
+    line-height: 30px;
+}
+span.price{
+    font-weight: bold;
+    color:red;
+    padding:10px;
+    text-align: center  ;
+}
+.card{
+    height:400px;
+}
+.view{
+    height: 50%;
+    overflow: hidden;
+}
+.view img{
+    max-width: 100%;
+    height: auto;
+}
