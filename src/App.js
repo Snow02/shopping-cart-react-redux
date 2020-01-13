@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProductContainer from "./containers/ProductContainer";
 import CartContainer from "./containers/CartContainer";
-import MessageContainer from "./constants/MessageContainer";
+import MessageContainer from "./containers/MessageContainer";
 
 
 function App() {

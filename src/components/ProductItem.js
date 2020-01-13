@@ -6,9 +6,21 @@ class ProductItem extends Component {
         this.props.onAddToCart(product);
         this.props.onChangeMessage(MSG_ADD_TO_CAST_SUCCESS);
     };
+    showRating = (rating) => {
+        let result = [];
+        if(rating > 0){
+            for(let i = 1 ; i <= rating ; i++){
+                result.push(<i className="fa fa-star"></i>)
+            }
+        }
+        for(let j = 1 ; j <= (5 - rating) ; j++){
+            result.push(<i className="fa fa-star-o"></i>)
+        }
+
+        return result;
+    };
     render() {
         const {product} = this.props;
-
         return (
             <div className="col-lg-3 col-md-4 mb-r">
                 <div className="card text-center card-cascade narrower">
@@ -20,16 +32,12 @@ class ProductItem extends Component {
                     </div>
                     <div className="card-body">
                         <h4 className="card-title">
-                            <strong>  <a>{product.name}</a>  </strong>
+                            <strong> <a>{product.name}</a>  </strong>
                         </h4>
 
                         <ul className="rating">
                             <li>
-                                <i className="fa fa-star"/>
-                                <i className="fa fa-star-o"/>
-                                <i className="fa fa-star-o"/>
-                                <i className="fa fa-star-o"/>
-                                <i className="fa fa-star-o"/>
+                               {this.showRating(product.rating)}
                             </li>
 
                         </ul>
