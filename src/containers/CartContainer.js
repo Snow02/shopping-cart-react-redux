@@ -41,7 +41,9 @@ class CartContainer extends Component {
         return (
             <Cart>
                 {this.showCartItem(listCart)}
-                <CartResult total = {this.showTotalAmount(listCart)} />
+                <CartResult
+                    total = {this.showTotalAmount(listCart)}
+                />
             </Cart>
 
         );

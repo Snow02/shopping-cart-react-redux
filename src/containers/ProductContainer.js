@@ -26,7 +26,7 @@ class ProductContainer extends Component {
 }
 
 // Check Prop Types
-ProductContainer.propTypes = {
+ProductContainer.propsTypes = {
     listProducts : PropTypes.arrayOf(
         PropTypes.shape({
             id : PropTypes.number.isRequired,

@@ -6,15 +6,16 @@ class ProductItem extends Component {
         this.props.onAddToCart(product);
         this.props.onChangeMessage(MSG_ADD_TO_CAST_SUCCESS);
     };
+    // show rating product
     showRating = (rating) => {
         let result = [];
         if(rating > 0){
             for(let i = 1 ; i <= rating ; i++){
-                result.push(<i className="fa fa-star"></i>)
+                result.push(<i key={i} className="fa fa-star"></i>)
             }
         }
         for(let j = 1 ; j <= (5 - rating) ; j++){
-            result.push(<i className="fa fa-star-o"></i>)
+            result.push(<i key={j+10} className="fa fa-star-o"></i>)
         }
 
         return result;
